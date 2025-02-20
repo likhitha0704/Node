@@ -1,0 +1,6 @@
+git init
+git status
+git add "filename"
+git add.(To add all files)
+git add "filename1"(space)"filename2"(space)"filename3"
+git commit -m "first commit"
