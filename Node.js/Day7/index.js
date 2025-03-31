@@ -1,6 +1,7 @@
 import {createServer} from "http"
 import fs from "fs"
 import {parse} from 'querystring'
+import { Console } from "console";
 let PORT=5000;
 let server=createServer((req,res)=>{
     if(req.method==="POST"){
@@ -37,6 +38,7 @@ let server=createServer((req,res)=>{
             res.writeHead(404,"Not found",{"content-type":"text/html"})
             let html=fs.createReadStream("./pnf.html","utf-8")
             html.pipe(res)
+            console.log("hii likhi im pushing the data to the git")
         }
     }
 })
