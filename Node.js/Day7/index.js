@@ -40,7 +40,7 @@ let server=createServer((req,res)=>{
             let html=fs.createReadStream("./pnf.html","utf-8")
             html.pipe(res)
             // console.log("im pushing the data to the git")
-            console.log("now Im checking the staging")
+            console.log("now Im checking the staging.........")
         }
     }
 })
