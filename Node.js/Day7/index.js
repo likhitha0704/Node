@@ -38,7 +38,7 @@ let server=createServer((req,res)=>{
             res.writeHead(404,"Not found",{"content-type":"text/html"})
             let html=fs.createReadStream("./pnf.html","utf-8")
             html.pipe(res)
-            console.log("hii likhi im pushing the data to the git")
+            console.log("im pushing the data to the git")
         }
     }
 })
