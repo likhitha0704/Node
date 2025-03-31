@@ -2,6 +2,7 @@ import {createServer} from "http"
 import fs from "fs"
 import {parse} from 'querystring'
 import { Console } from "console";
+import { console } from "inspector/promises";
 let PORT=5000;
 let server=createServer((req,res)=>{
     if(req.method==="POST"){
@@ -38,7 +39,8 @@ let server=createServer((req,res)=>{
             res.writeHead(404,"Not found",{"content-type":"text/html"})
             let html=fs.createReadStream("./pnf.html","utf-8")
             html.pipe(res)
-            console.log("im pushing the data to the git")
+            // console.log("im pushing the data to the git")
+            console.log("now Im checking the staging")
         }
     }
 })
